@@ -1,0 +1,29 @@
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin-top: 80px;
+}
+
+.load-more-button {
+  display: block;
+  width: 170px;
+  height: 64px;
+  margin: 100px auto;
+  padding: 16px, 40px, 16px, 40px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  background-color: #1e1b1b;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .card-container {
+    padding: 0 10px;
+  }
+}

@@ -1,0 +1,36 @@
+/* .heading {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 48px;
+} */
+
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Manrope", sans-serif
+}
+
+.container {
+  max-width: 1200px; /* Maximum width of the content */
+  margin: 0 auto;    /* Centers the content horizontally */
+  padding: 0 15px;   
+  box-sizing: border-box; /* Ensures padding doesn't affect overall width */
+}
+
+/* Additional styling for responsiveness */
+@media (max-width: 1200px) {
+  .container {
+      padding: 0 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+      padding: 0 15px;
+  }
+}
