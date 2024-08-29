@@ -1,4 +1,4 @@
-/* .hero {
+.hero {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -18,6 +18,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center 80%;
   border-radius: 0;
 }
 
@@ -85,121 +86,20 @@
 
   .hero-heading {
     font-size: 28px;
+    width: 90%;
+  }
+
+  .hero-text {
+    font-size: 16px;
+    width: 90%;
+    line-height: 1.5;
   }
 
   .hero-title {
     font-size: 28px;
   }
-} */
 
-
-
-
-
-.hero {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    height: 60vh;
-    box-sizing: border-box;
-    overflow: hidden;
-  }
-  
-  .hero-left {
-    position: relative;
-    width: 50%;
-    height: 100%;
-  }
-  
   .hero-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center 80%; /* Adjust to zoom in and position the car */
-    border-radius: 0;
+    object-position: center 10%;
   }
-  
-  .hero-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .hero-title {
-    color: #fff;
-    font-size: 64px;
-    font-weight: 800;
-    text-align: center;
-  }
-  
-  .hero-right {
-    width: 50%;
-    padding: 0 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    box-sizing: border-box;
-    height: 100%;
-    background-color: #1e1b1b;
-    color: #ffffff;
-  }
-  
-  .hero-heading {
-    font-size: 40px;
-    font-weight: 700;
-    margin-bottom: 20px;
-    width: 70%;
-  }
-  
-  .hero-text {
-    font-size: 18px;
-    line-height: 31.5px;
-    color: #ffffff;
-    width: 70%;
-  }
-  
-  /* Responsive Styling */
-  @media (max-width: 768px) {
-    .hero {
-      flex-direction: column;
-      height: auto;
-    }
-  
-    .hero-left,
-    .hero-right {
-      width: 100%;
-      text-align: center;
-      height: 40vh;
-    }
-  
-    .hero-right {
-      padding: 20px;
-    }
-  
-    .hero-heading {
-      font-size: 28px;
-      width: 90%; /* Adjust width for smaller screens */
-    }
-  
-    .hero-text {
-      font-size: 16px;
-      width: 90%; /* Adjust width for smaller screens */
-      line-height: 1.5;
-    }
-  
-    .hero-title {
-      font-size: 28px;
-    }
-  
-    .hero-image {
-      object-position: center 10%; /* Adjust the image position for smaller screens */
-    }
-  }
-  
+}

@@ -28,9 +28,7 @@ const FeatureCard = () => {
             provide a full range of front end mechanical.
           </p>
           <div className="feature-card-footer">
-            <Link className="read-more">
-              Read more →
-            </Link>
+            <Link className="read-more">Read more →</Link>
           </div>
         </div>
       </div>

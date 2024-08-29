@@ -1,41 +1,7 @@
-/* .navbar {
-  padding: 15px 0;
-}
-
-.logo {
-  font-size: 24px;
-  font-weight: bold;
-  text-decoration: none;
-  color: #000;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  justify-content: end;
-  gap: 30px;
-  margin: 20px 0px;
-  padding: 0;
-}
-
-.logo {
-  margin-right: auto;
-}
-
-.nav-links a {
-  text-decoration: none;
-  color: #000;
-  font-weight: 500;
-  font-size: 16px;
-  font-weight: 600;
-} */
-
-
-
-
 .navbar {
   padding: 15px 0;
   position: relative;
+  z-index: 1000;
 }
 
 .nav-links {
@@ -59,7 +25,6 @@
   font-weight: 600;
 }
 
-/* Hamburger Menu Styling */
 .hamburger {
   display: none;
   flex-direction: column;

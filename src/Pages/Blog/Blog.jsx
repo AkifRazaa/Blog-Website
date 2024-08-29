@@ -32,7 +32,9 @@ const Blog = () => {
   return (
     <section>
       <Hero />
+
       <FeatureCard />
+      
       <div className="card-container container">
         {blogPosts.slice(0, visiblePosts).map((post) => (
           <Card
@@ -45,6 +47,7 @@ const Blog = () => {
           />
         ))}
       </div>
+      
       {visiblePosts < blogPosts.length && (
         <button onClick={handleLoadMore} className="load-more-button">
           Load More

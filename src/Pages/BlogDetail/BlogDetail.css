@@ -1,5 +1,5 @@
 .post-detail {
-  margin: auto; /* Centers the content horizontally */
+  margin: auto;
   padding: 0 15px;
   width: 1000px;
 }
@@ -18,8 +18,9 @@
 }
 
 .post-detail h1 {
-  font-size: 2rem;
-  margin-bottom: 10px;
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 20px;
 }
 
 .post-detail h2 {
@@ -53,4 +54,82 @@
   line-height: 28px;
   font-weight: 600;
   margin-bottom: 50px;
+}
+
+.styled-paragraph {
+  padding: 20px 0px 20px 50px;
+  border-left: 4px solid black;
+}
+
+@media screen and (max-width: 768px) {
+  .post-detail {
+    width: 90%;
+    padding: 0 20px;
+  }
+
+  .post-detail h1 {
+    font-size: 2rem;
+  }
+
+  .post-detail h2 {
+    font-size: 1.25rem;
+  }
+
+  .post-paragraph,
+  .card-date,
+  .card-view {
+    font-size: 0.9rem;
+  }
+
+  .post-detail-image {
+    width: 100%;
+    height: auto;
+    padding: 0 20px;
+  }
+
+  .post-detail-image-container {
+    margin-bottom: 30px;
+    padding: 0 15px;
+  }
+
+  .styled-paragraph {
+    padding: 15px 0 15px 20px;
+    border-left: 3px solid black;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .post-detail {
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  .post-detail h1 {
+    font-size: 1.75rem;
+  }
+
+  .post-detail h2 {
+    font-size: 1.1rem;
+  }
+
+  .post-paragraph,
+  .card-date,
+  .card-view {
+    font-size: 0.8rem;
+  }
+
+  .post-detail-image {
+    width: 100%;
+    height: auto;
+    padding: 0 10px;
+  }
+
+  .styled-paragraph {
+    padding: 10px 0 10px 15px;
+  }
+
+  .post-detail-image-container {
+    margin-bottom: 20px;
+    padding: 0 10px;
+  }
 }

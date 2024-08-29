@@ -1,39 +1,3 @@
-// import React from "react";
-// import "./Navbar.css";
-// import { Link } from "react-router-dom";
-
-
-// const Navbar = () => {
-//   return (
-//     <nav className="navbar">
-//       <ul className="nav-links">
-//         <li className="logo">
-//           <Link to={""}>finsweet</Link>
-//         </li>
-//         <li>
-//           <Link to={""}>Home</Link>
-//         </li>
-//         <li>
-//           <Link to={""}>About us</Link>
-//         </li>
-//         <li>
-//           <Link to={""}>Services</Link>
-//         </li>
-//         <li>
-//           <Link to={""}>Blog</Link>
-//         </li>
-//         <li>
-//           <Link to={""}>Contact</Link>
-//         </li>
-//       </ul>
-//     </nav>
-//   );
-// };
-
-// export default Navbar;
-
-
-
 import React, { useState } from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
@@ -49,22 +13,22 @@ const Navbarr = () => {
     <nav className="navbar">
       <ul className={`nav-links ${isOpen ? "open" : ""}`}>
         <li className="logo">
-          <a to="/">finsweet</a>
+          <Link to="/">finsweet</Link>
         </li>
         <li>
-          <a to="/">Home</a>
+          <Link to="/">Home</Link>
         </li>
         <li>
-          <a to="/about">About us</a>
+          <Link to="/">About us</Link>
         </li>
         <li>
-          <a to="/services">Services</a>
+          <Link to="/">Services</Link>
         </li>
         <li>
-          <a to="/blog">Blog</a>
+          <Link to="/">Blog</Link>
         </li>
         <li>
-          <a to="/contact">Contact</a>
+          <Link to="/">Contact</Link>
         </li>
       </ul>
       <div className="hamburger" onClick={toggleMenu}>
@@ -73,7 +37,6 @@ const Navbarr = () => {
         <span></span>
       </div>
     </nav>
-
   );
 };
 
